@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import styles from "./App.module.css";
+import Form from "./componets/formComponent/Form";
+import logo from "../src/assets/img/docsumo-logo.png";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.App}>
+      <div className={styles.main}>
+        <div className={styles.main_wrapper}>
+          {/* Logo */}
+          <div className={styles.logo}>
+            <a href="#">
+              <img src={logo} alt="" />
+            </a>
+          </div>
+          {/* Login Form */}
+          <Form />
+        </div>
+      </div>
     </div>
   );
 }

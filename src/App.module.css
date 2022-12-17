@@ -1,0 +1,44 @@
+/* Main Body */
+.App{
+    height: 100%;
+    overflow: hidden;
+}
+.main{
+    height: 100vh;
+    overflow: auto;
+    min-width: 1024px;
+    position: relative;
+    padding: 30px 60px;
+    background: url('/src/assets/img/docsumo_background.png') no-repeat 100% 100% ;
+    background-size: cover;
+}
+.main_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100%;
+}
+/* Logo  */
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo a{
+   width: 165px;
+   display: inline-block;
+}
+.logo a img{
+    width: 100%;
+    height: auto;
+}
+
+/* Media Query */
+@media screen and (min-width: 1440px) {
+    .main{
+        padding: 68px 120px;
+    }
+}
+
