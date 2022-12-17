@@ -89,7 +89,7 @@ const Form = () => {
         }
       );
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
 
       setloginData({
         status: data.status,
@@ -99,7 +99,7 @@ const Form = () => {
       dispatchEmailFn({ type: "clearEmail" });
       dispatchPasswordFn({ type: "clearPassword" });
     } catch (err) {
-      console.log("error", err);
+      // console.log("error", err);
     }
   }, [emailInput.value, passwordInput.value]);
 

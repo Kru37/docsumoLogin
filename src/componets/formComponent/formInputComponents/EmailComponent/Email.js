@@ -19,7 +19,9 @@ const Email = (props) => {
           placeholder="janedoe@abc.com"
           autoComplete="off"
           onChange={handleChange}
-          className={`${styles.form_input_email} ${styles.form_input}`}
+          className={`${styles.form_input_email} ${styles.form_input} ${
+            error && styles.form_error
+          }`}
         />
       </div>
       {error && (

@@ -114,6 +114,9 @@
     
 }
 /* Error */
+.form_error{
+    border: 1px solid #c2004f;
+}
 .form_input_error{
     margin-top: 8px;
     color: #c2004f;

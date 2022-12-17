@@ -64,7 +64,9 @@ const Password = (props) => {
             placeholder="Enter password here..."
             autoComplete="on"
             onChange={handleChange}
-            className={`${styles.form_input_password} ${styles.form_input}`}
+            className={`${styles.form_input_password} ${styles.form_input} ${
+              error && styles.form_error
+            }`}
           />
           <span
             title={showPassword ? "Hide Password" : "Show Password"}
